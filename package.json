@@ -6,10 +6,10 @@
   "scripts": {
     "dev:web": "npm run build:packages && npm run dev -w @whisper-loop/web",
     "storybook:web-ui": "npm run storybook -w @whisper-loop/web-ui",
+    "build:web": "npm run build:packages && npm run build -w @whisper-loop/web --if-present",
     "build:core": "npm run build -w @whisper-loop/core --if-present",
     "build:web-ui": "npm run build -w @whisper-loop/web-ui --if-present",
     "build:utils": "npm run build -w @whisper-loop/utils --if-present",
-    "build:web": "npm run build -w @whisper-loop/web --if-present",
     "build:packages": "npm run build:core && npm run build:utils && npm run build:web-ui",
     "format": "npm run format --ws --if-present",
     "format:web": "npm run format -w @whisper-loop/web --if-present",
